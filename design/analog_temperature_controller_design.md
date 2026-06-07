@@ -121,7 +121,7 @@ This complementary arrangement implements:
 
 ## 3) Design Calculations
 
-## 3.1 Thermistor Divider (VSENSE)
+### 3.1 Thermistor Divider (VSENSE)
 
 For `TH1` (top leg) and `R1 = 10 kΩ` (bottom leg):
 
@@ -143,7 +143,7 @@ Approximate values:
 
 So 20–26°C corresponds to approximately **5.33 V to 6.13 V** on `VSENSE` at 12 V supply.
 
-## 3.2 Setpoint Scaling (VREF)
+### 3.2 Setpoint Scaling (VREF)
 
 `RV1` provides a tunable voltage, then `R2/R3` compress and shift the usable span.
 Practical setup:
@@ -154,13 +154,13 @@ Practical setup:
 
 Given both fixed legs are 68 kΩ, loading is symmetric and stable; fine trim is done by RV1 in simulation.
 
-## 3.3 MOSFET Gate Drive
+### 3.3 MOSFET Gate Drive
 
 - LM393 pull-up to 12 V yields gate high near 12 V (minus small sink effects), enough for IRF540N strong enhancement.
 - Gate series \(100\Omega\) limits dI/dt and ringing.
 - Gate pull-down \(10k\Omega\) guarantees OFF at startup/fault.
 
-## 3.4 Heater Current and Power
+### 3.4 Heater Current and Power
 
 Heater model \(R_H = 6\Omega\) on 12 V:
 
