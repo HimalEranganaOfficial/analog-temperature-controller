@@ -1,0 +1,5 @@
+; Custom library notes for Proteus project
+; Standard Proteus parts are sufficient for this design:
+; LM393, IRF540N, 1N4007, POT-HG, NTC thermistor, resistors, capacitors, DC motor/load
+;
+; Keep this file to satisfy project deliverable structure.
